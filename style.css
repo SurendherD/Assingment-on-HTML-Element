@@ -12,15 +12,16 @@
 }
 
 /* grouping selector */
+
 div h1{
     text-align: center;
 }
-
 
 /* id selector */
 #naming{
     margin-bottom: 4%;
 }
+
 
 /* grouping selector */
 #java,#python,#c,#js{
@@ -28,10 +29,30 @@ div h1{
     font-size: 50px;
     margin-right: 5%;
     border-radius: 10px;
-    background-color: grey;
+    cursor: pointer;
+    border: none;
 }
 
-/* id selector */
 #lang{
     text-align: center;
 }
+
+/* pseudo elements*/
+.btn:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  #naming:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+  /* pseudo class*/
+  #name::before {
+    content: url(/favicon.ico);
+  }
+
+  #name::first-line {
+    color: rgb(176, 13, 13);
+    font-variant: small-caps;
+  }
